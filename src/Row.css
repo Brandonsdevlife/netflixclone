@@ -1,0 +1,74 @@
+.row {
+  color: #fff;
+  margin-left: 20px;
+}
+
+.row__posters {
+  display: flex;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  padding: 16px 16px 16px 25px;
+  cursor: pointer;
+}
+
+.row__posters::-webkit-scrollbar {
+  display: none;
+}
+
+.row__poster {
+  object-fit: contain;
+  max-height: 100px;
+  justify-content: space-between;
+  padding: 8px;
+  transition: transform 330ms ease-in-out;
+  flex: 1;
+}
+
+.row__poster:hover {
+  transform: scale(1.08);
+}
+
+.row__posterLarge {
+  max-height: 250px;
+  margin: 6px;
+}
+
+.row__posterLarge:hover {
+  transform: scale(1.25);
+}
+
+.row__posterSmall {
+  max-height: 100px;
+}
+
+.row__posterSmall:hover {
+  transform: scale(1.15);
+}
+
+.container {
+  display: grid;
+  object-fit: contain;
+}
+
+.row__poster__title {
+  margin: auto;
+  padding: 2px 4px 0 4px;
+  font-size: 16px;
+  z-index: 2;
+}
+
+/* .row__posters:focus-within .row__posterSmall,
+.row__posters:hover .row__posterSmall {
+  transform: translateX(-25%);
+}
+
+.row__posterSmall:focus ~ .row__posterSmall,
+.row__posterSmall:hover ~ .row__posterSmall {
+  transform: translateX(25%);
+}
+
+.row__posters .row__posterSmall:focus,
+.row__posters .row__posterSmall:hover {
+  transform: scale(1.5);
+  z-index: 1;
+} */
